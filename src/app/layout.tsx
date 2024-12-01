@@ -23,6 +23,7 @@ export default function RootLayout({
       <body
         className={`${retroFont.className} antialiased`}
       >
+        <div className="absolute inset-0 -z-10 h-full w-full bg-#0F1045 bg-[linear-gradient(to_right,#28133a_1px,transparent_1px),linear-gradient(to_bottom,#28133a_1px,transparent_1px)] bg-[size:6rem_4rem]"></div>
         {children}
       </body>
     </html>
