@@ -1,15 +1,20 @@
 'use client';
 
+import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-
 const Navbar = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);  
   const pathname = usePathname();
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
 
   return (
     <nav className="bg-gray-600 text-white py-4">
-        <div className="container mx-auto flex items-center justify-between">
+        <div className="container mx-auto flex flex-wrap items-center justify-between px-4">
     
         {/* Title on navbar */}
         <div className="text-2xl">
@@ -18,27 +23,52 @@ const Navbar = () => {
             </Link>
         </div>
 
+        {/* Hamburger icon for mobile */}
+        <button 
+        onClick={toggleMenu} 
+        type="button"
+        className="block md:hidden text-white hover:text-purple-600 focus:outline-none"
+        >
+        <svg
+  className="w-5 h-5"
+  aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  viewBox="0 0 17 14"
+>
+  <path
+    stroke="currentColor"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="2"
+    d="M1 1h15M1 7h15M1 13h15"
+  />
+</svg>
+        </button>
+
         {/* Navigation links */}
-      <ul className="flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 text-sm font-medium">
+      <div className={`${isMenuOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`}>
+      <ul className="flex flex-col p-2 md:flex-row md:space-x-8 rtl:space-x-reserve md:bg-transparent mt-4 md:mt-0 font-medium bg-gray-800 border rounded-lg border-transparent">
         <li>
-          <Link className={`${pathname === '/' ? 'text-purple-600':'text-white hover:text-purple-600'}`} href={"/"}>
+          <Link className={`block py-2 px-3 ${pathname === '/' ? 'text-purple-600':'text-white hover:text-purple-600'}`} href={"/"}>
           Home
           </Link>
         </li>
         <li>
-        <Link className={`${pathname === '/about' ? 'text-purple-600':'text-white hover:text-purple-600'}`} href={"/about"}>
+        <Link className={`block py-2 px-3 ${pathname === '/about' ? 'text-purple-600':'text-white hover:text-purple-600'}`} href={"/about"}>
           About
           </Link>
         </li>
         <li>
-        <Link className={`${pathname === '/projects' ? 'text-purple-600':'text-white hover:text-purple-600'}`} href={"/projects"}>
+        <Link className={`block py-2 px-3 ${pathname === '/projects' ? 'text-purple-600':'text-white hover:text-purple-600'}`} href={"/projects"}>
           Projects
           </Link>
         </li>
       </ul>
+      </div>
 
       {/* GitHub icon */}
-      <a href="#">
+      <a className="hidden md:block" href="#">
         <img className="w-7" src="assets\github-mark-white.svg"></img>
       </a>
 
