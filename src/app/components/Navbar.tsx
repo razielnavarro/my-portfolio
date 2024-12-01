@@ -13,13 +13,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-600 text-white py-4">
+    <nav className="bg-gray-600 text-white py-2">
         <div className="container mx-auto flex flex-wrap items-center justify-between px-4">
     
-        {/* Title on navbar */}
-        <div className="text-2xl">
+        {/* Logo on navbar */}
+        <div>
           <Link href="/" prefetch={true}>
-            <span className="text-white">Raziel</span>
+            <img src="assets/Raziel8bit.png" className="object-contain w-32 h-32"></img>
             </Link>
         </div>
 
@@ -69,7 +69,7 @@ const Navbar = () => {
 
       {/* GitHub icon */}
       <a className="hidden md:block" href="#">
-        <img className="w-7" src="assets\github-mark-white.svg"></img>
+        <img className="w-7" src="assets\GitHubRetroWhite.png"></img>
       </a>
 
       </div>
