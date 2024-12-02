@@ -48,7 +48,7 @@ const Navbar = () => {
 
         {/* Navigation links */}
       <div className={`${isMenuOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`}>
-      <ul className="flex flex-col p-2 md:flex-row md:space-x-8 rtl:space-x-reserve md:bg-transparent mt-4 md:mt-0 font-medium bg-gray-800 border rounded-lg border-transparent">
+      <ul className="flex flex-col p-2 md:flex-row md:space-x-8 rtl:space-x-reserve md:bg-transparent mt-4 md:mt-0 font-medium bg-customPurple border rounded-lg border-purple-600 md:border-transparent">
         <li>
           <Link className={`block py-2 px-3 ${pathname === '/' ? 'text-purple-600':'text-white hover:text-purple-600'}`} href={"/"}>
           Home
