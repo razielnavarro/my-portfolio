@@ -7,7 +7,25 @@ export default function Home() {
     <header>
       <Navbar />
     </header>
-    <main></main>
+    <main className="mt-10 md:mt-1 flex flex-col-reverse gap-8 items-center md:flex-row md:gap-16 md:justify-center min-h-65vh md:min-h-80vh">
+
+      {/* Section with name and role */}
+
+      <section className="gap-y-2 text-center md:text-left px-10">
+      <h1 className="text-4xl md:text-5xl">
+        Raziel Navarro
+      </h1>
+      <h1 className="text-xl md:text-2xl py-2 text-transparent bg-clip-text bg-purple-gradient">
+        Full Stack Developer
+      </h1>
+      </section>
+
+      {/* Aside section with video game character image */}
+      <aside className="flex justify-center md:justify-start">
+        <img alt="Kirby" src="assets\Kirby.gif" className="w-10/12 md:h-auto"></img>
+      </aside>
+
+    </main>
     </>
   );
 }
