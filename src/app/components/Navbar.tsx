@@ -68,7 +68,7 @@ const Navbar = () => {
       </div>
 
       {/* GitHub icon */}
-      <a className="hidden md:block" href="#">
+      <a className="hidden md:block" href="https://github.com/razielnavarro">
         <img className="w-7" src="assets\GitHubRetroWhite.png"></img>
       </a>
 
