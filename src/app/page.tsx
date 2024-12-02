@@ -7,7 +7,7 @@ export default function Home() {
     <header>
       <Navbar />
     </header>
-    <main className="mt-10 md:mt-1 flex flex-col-reverse gap-8 items-center md:flex-row md:gap-16 md:justify-center min-h-65vh md:min-h-80vh">
+    <main className="mt-10 md:mt-[100px] flex flex-col-reverse gap-8 items-center md:flex-row md:gap-16 md:justify-center min-h-65vh md:min-h-80vh">
 
       {/* Section with name and role */}
 
