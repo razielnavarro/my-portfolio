@@ -38,6 +38,10 @@ export default function Home() {
         <div className="text-center text-xs md:text-md"><img className="w-32 h-32 md:w-60 md:h-60 object-contain" src="assets/node.png" alt="node.js"></img>Node.js</div>
       </section>
 
+    {/* Footer for the website */}
+    <footer className="h-16">
+
+    </footer>
     </>
   );
 }
