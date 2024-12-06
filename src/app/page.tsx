@@ -26,7 +26,8 @@ export default function Home() {
     </main>
 
       {/* Section with skills */}
-      <h1 className="mx-auto text-center mt-14 mb-1 text-2xl">Skills</h1>
+      <div className="text-center">
+      <h1 className="inline-block mx-auto text-center mt-14 mb-1 text-2xl">Skills</h1>
         <section className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-2 justify-items-center w-auto md:w-3/4 lg:w-2/4 mx-auto">
         <div className="text-center text-xs md:text-md"><img className="w-32 h-32 md:w-60 md:h-60 object-contain" src="assets/html.png" alt="html"></img>HTML</div>
         <div className="text-center text-xs md:text-md"><img className="w-32 h-32 md:w-60 md:h-60 object-contain" src="assets/css.png" alt="css"></img>CSS</div>
@@ -37,6 +38,7 @@ export default function Home() {
         <div className="text-center text-xs md:text-md"><img className="w-32 h-32 md:w-60 md:h-60 object-contain" src="assets/tailwind.png" alt="tailwind css"></img>Tailwind CSS</div>
         <div className="text-center text-xs md:text-md"><img className="w-32 h-32 md:w-60 md:h-60 object-contain" src="assets/node.png" alt="node.js"></img>Node.js</div>
       </section>
+      </div>
 
     {/* Footer for the website */}
     <footer className="h-16">
