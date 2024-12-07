@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import ProjectCard from "./components/ProjectCards";
 
 export default function Home() {
   return (
@@ -38,6 +39,12 @@ export default function Home() {
         <div className="text-center text-xs md:text-md"><img className="w-32 h-32 md:w-60 md:h-60 object-contain" src="assets/tailwind.png" alt="tailwind css"></img>Tailwind CSS</div>
         <div className="text-center text-xs md:text-md"><img className="w-32 h-32 md:w-60 md:h-60 object-contain" src="assets/node.png" alt="node.js"></img>Node.js</div>
       </section>
+      </div>
+
+      {/* Section with projects */}
+            <div className="text-center">
+      <h1 className="inline-block mx-auto text-center mt-14 mb-5 text-2xl">Projects</h1>
+      <ProjectCard />
       </div>
 
     {/* Footer for the website */}
