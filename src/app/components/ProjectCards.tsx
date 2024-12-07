@@ -52,7 +52,7 @@ const ProjectCards = () => {
     ];  
 
     return (
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-2 mx-auto w-4/5 md:w-3/5 justify-items-center">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-2 mx-auto w-4/5 lg:w-3/5 justify-items-center">
             {projectData.map((project, index) => (
                 <ProjectCard key={index}
                     href={project.href}
