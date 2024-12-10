@@ -54,14 +54,14 @@ const ProjectCards = () => {
             techStack:["React", "TypeScript", "Tailwind CSS", "Fortnite API"],
         },
         {
-            href: "https://my-fortnite-tracker.vercel.app/",
+            href: "https://superbonita507.com/",
             imgSrc: "assets/superbonita.png",
             imgAlt: "Superbonita Cosmeticos",
             title: "Superbonita Cosmeticos",
             techStack:["Shopify"],
         },
         {
-            href: "https://my-fortnite-tracker.vercel.app/",
+            href: "https://www.selectamagazine.com.pa/",
             imgSrc: "assets/selecta.png",
             imgAlt: "Selecta Magazine",
             title: "Selecta Magazine",
