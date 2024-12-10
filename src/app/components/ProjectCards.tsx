@@ -7,16 +7,37 @@ interface ProjectCardsProps {
     imgSrc: string;
     imgAlt: string;
     title: string;
+    techStack: string[];
 }
 
+// Map tech stack names to background colors
+const techStackColors: { [key: string]: string } = {
+    "React": "bg-blue-500",
+    "TypeScript": "bg-blue-400",
+    "Tailwind CSS": "bg-teal-400",
+    "Fortnite API": "bg-yellow-500",
+    "Shopify": "bg-green-500",
+    "WordPress": "bg-gray-800",
+};
+
 // Reusable ProjectCard component
-const ProjectCard: React.FC<ProjectCardsProps> = ({ href, imgSrc, imgAlt, title }) => {
+const ProjectCard: React.FC<ProjectCardsProps> = ({ href, imgSrc, imgAlt, title, techStack }) => {
     return (
         <a href={href} target="_blank" rel="noopener noreferrer">
-            <div className="relative md:w-full">
-                <img src={imgSrc} alt={imgAlt} />
+            <div className="relative md:w-full flex flex-col">
+                {/* Image */}
+                <img src={imgSrc} alt={imgAlt} className="w-full h-auto"/>
+                {/* Title */}
                 <div className="absolute bottom-0 left-3 py-2">{title}</div>
             </div>
+            {/* Tech stack */}
+            <div className="flex flex-wrap space-x-2 py-2 mt-2 w-full">
+                {techStack.map((tech, index) => (
+                        <span key={index} className={`${techStackColors[tech] || 'bg-gray-200'} text-white px-2 py-1 m-1 text-xs rounded`}>
+                            {tech}
+                        </span>
+                        ))}
+                </div>
         </a>
     );
 }
@@ -29,25 +50,29 @@ const ProjectCards = () => {
             href: "https://my-fortnite-tracker.vercel.app/",
             imgSrc: "assets/FortniteHub.png",
             imgAlt: "Fortnite Hub",
-            title: "Fortnite Hub"
+            title: "Fortnite Hub",
+            techStack:["React", "TypeScript", "Tailwind CSS", "Fortnite API"],
         },
         {
             href: "https://my-fortnite-tracker.vercel.app/",
             imgSrc: "assets/superbonita.png",
             imgAlt: "Superbonita Cosmeticos",
-            title: "Superbonita Cosmeticos"
+            title: "Superbonita Cosmeticos",
+            techStack:["Shopify"],
         },
         {
             href: "https://my-fortnite-tracker.vercel.app/",
             imgSrc: "assets/selecta.png",
             imgAlt: "Selecta Magazine",
-            title: "Selecta Magazine"
+            title: "Selecta Magazine",
+            techStack:["WordPress"],
         },
         {
             href: "https://my-fortnite-tracker.vercel.app/",
             imgSrc: "assets/FortniteHub.png",
             imgAlt: "Fortnite Hub",
-            title: "Fortnite Hub"
+            title: "Fortnite Hub",
+            techStack:["React", "TypeScript", "Tailwind CSS", "Fortnite API"],
         }
     ];  
 
@@ -59,6 +84,7 @@ const ProjectCards = () => {
                     imgSrc={project.imgSrc}
                     imgAlt={project.imgAlt}
                     title={project.title}
+                    techStack={project.techStack}
                 /> 
             ))}
         </section>
