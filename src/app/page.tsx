@@ -10,8 +10,7 @@ export default function Home() {
     <main className="mt-10 md:mt-[100px] flex flex-col-reverse gap-8 items-center md:flex-row md:gap-16 md:justify-center min-h-65vh md:min-h-80vh">
 
       {/* Section with name and role */}
-
-      <section className="gap-y-2 text-center md:text-left px-10">
+      <section className="gap-y-2 text-center md:text-left px-10 mb-12">
       <h1 className="text-4xl md:text-5xl">
         Raziel Navarro
       </h1>
@@ -28,8 +27,8 @@ export default function Home() {
 
       {/* Section with skills */}
       <div className="text-center">
-      <h1 className="inline-block mx-auto text-center mt-14 mb-1 text-2xl">Skills</h1>
-        <section className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-2 justify-items-center w-auto md:w-3/4 lg:w-2/4 mx-auto">
+      <h1 className="pixel-btn">Skills</h1>
+        <section className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-2 justify-items-center w-auto md:w-3/4 lg:w-2/4 mx-auto mb-12">
         <div className="text-center text-xs md:text-md"><img className="w-32 h-32 md:w-60 md:h-60 object-contain" src="assets/html.png" alt="html"></img>HTML</div>
         <div className="text-center text-xs md:text-md"><img className="w-32 h-32 md:w-60 md:h-60 object-contain" src="assets/css.png" alt="css"></img>CSS</div>
         <div className="text-center text-xs md:text-md"><img className="w-32 h-32 md:w-60 md:h-60 object-contain" src="assets/js.png" alt="javascript"></img>JavaScript</div>
@@ -42,8 +41,8 @@ export default function Home() {
       </div>
 
       {/* Section with projects */}
-            <div className="text-center">
-      <h1 className="inline-block mx-auto text-center mt-14 mb-5 text-2xl">Projects</h1>
+      <div className="text-center">
+      <h1 className="pixel-btn">Projects</h1>
       <ProjectCard />
       </div>
 

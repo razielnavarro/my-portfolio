@@ -18,3 +18,28 @@ body {
   color: var(--foreground);
   background: var(--background);
 }
+
+
+.pixel-btn {
+  @apply relative inline-block text-center px-4 py-2 border-2 text-2xl bg-purple-600 text-white border-black mb-4;
+  box-shadow:inset -4px -4px 0px rgba(0, 0, 0, 0.4);
+}
+
+.pixel-btn::before,
+.pixel-btn::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: black;
+}
+
+.pixel-btn::before {
+  top: -2px;
+  left: -2px;
+}
+
+.pixel-btn::after {
+  bottom: -2px;
+  right: -2px;
+}
