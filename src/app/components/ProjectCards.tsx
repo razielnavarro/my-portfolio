@@ -18,6 +18,7 @@ const techStackColors: { [key: string]: string } = {
     "Fortnite API": "bg-yellow-500",
     "Shopify": "bg-green-500",
     "WordPress": "bg-gray-800",
+    "Next.js": "bg-black",
 };
 
 // Reusable ProjectCard component
@@ -51,7 +52,7 @@ const ProjectCards = () => {
             imgSrc: "assets/FortniteHub.png",
             imgAlt: "Fortnite Hub",
             title: "Fortnite Hub",
-            techStack:["React", "TypeScript", "Tailwind CSS", "Fortnite API"],
+            techStack:["Next.js", "React", "TypeScript", "Tailwind CSS", "Fortnite API"],
         },
         {
             href: "https://superbonita507.com/",
@@ -72,7 +73,7 @@ const ProjectCards = () => {
             imgSrc: "assets/FortniteHub.png",
             imgAlt: "Fortnite Hub",
             title: "Fortnite Hub",
-            techStack:["React", "TypeScript", "Tailwind CSS", "Fortnite API"],
+            techStack:["Next.js", "React", "TypeScript", "Tailwind CSS", "Fortnite API"],
         }
     ];  
 
