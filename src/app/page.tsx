@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import ProjectCard from "./components/ProjectCards";
+import SkillsCarousel from "./components/SkillsCarousel";
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
       {/* Section with skills */}
       <div className="text-center">
       <h1 className="pixel-btn">Skills</h1>
-        <section className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-2 justify-items-center w-auto md:w-3/4 lg:w-2/4 mx-auto mb-12">
+        {/* <section className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-2 justify-items-center w-auto md:w-3/4 lg:w-2/4 mx-auto mb-12">
         <div className="text-center text-xs md:text-md"><img className="w-32 h-32 md:w-60 md:h-60 object-contain" src="assets/html.png" alt="html"></img>HTML</div>
         <div className="text-center text-xs md:text-md"><img className="w-32 h-32 md:w-60 md:h-60 object-contain" src="assets/css.png" alt="css"></img>CSS</div>
         <div className="text-center text-xs md:text-md"><img className="w-32 h-32 md:w-60 md:h-60 object-contain" src="assets/js.png" alt="javascript"></img>JavaScript</div>
@@ -37,7 +38,8 @@ export default function Home() {
         <div className="text-center text-xs md:text-md"><img className="w-32 h-32 md:w-60 md:h-60 object-contain" src="assets/next.png" alt="next.js"></img>Next.js</div>
         <div className="text-center text-xs md:text-md"><img className="w-32 h-32 md:w-60 md:h-60 object-contain" src="assets/tailwind.png" alt="tailwind css"></img>Tailwind CSS</div>
         <div className="text-center text-xs md:text-md"><img className="w-32 h-32 md:w-60 md:h-60 object-contain" src="assets/node.png" alt="node.js"></img>Node.js</div>
-      </section>
+      </section> */}
+      <SkillsCarousel/>
       </div>
 
       {/* Section with projects */}
