@@ -9,7 +9,7 @@ const SkillsList: Skills[] = [
     { imgSrc: "assets/js.png", imgAlt: "javascript" },
     { imgSrc: "assets/ts.png", imgAlt: "typescript" },
     { imgSrc: "assets/react.png", imgAlt: "react" },
-    { imgSrc: "assets/next.png", imgAlt: "next.js" },
+    { imgSrc: "assets/nextjs.png", imgAlt: "next.js" },
     { imgSrc: "assets/tailwind.png", imgAlt: "tailwind css" },
     { imgSrc: "assets/node.png", imgAlt: "node.js" },
 ];
