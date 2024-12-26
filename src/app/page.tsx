@@ -28,7 +28,7 @@ export default function Home() {
     </main>
 
       {/* Section with skills */}
-      <div className="text-center">
+      <div id="skills" className="text-center">
       <h1 className="pixel-btn">Skills</h1>
         {/* <section className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-2 justify-items-center w-auto md:w-3/4 lg:w-2/4 mx-auto mb-12">
         <div className="text-center text-xs md:text-md"><img className="w-32 h-32 md:w-60 md:h-60 object-contain" src="assets/html.png" alt="html"></img>HTML</div>

@@ -50,17 +50,17 @@ const Navbar = () => {
       <div className={`${isMenuOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`}>
       <ul className="flex flex-col p-2 md:flex-row md:space-x-8 rtl:space-x-reserve md:bg-transparent mt-4 md:mt-0 font-medium bg-customPurple border rounded-lg border-purple-600 md:border-transparent">
         <li>
-          <Link className={`block py-2 px-3 ${pathname === '/' ? 'text-purple-600':'text-white hover:text-purple-600'}`} href={"/"}>
+          {/* <Link className={`block py-2 px-3 ${pathname === '/' ? 'text-purple-600':'text-white hover:text-purple-600'}`} href={"/"}>
           Home
+          </Link> */}
+        </li>
+        <li>
+        <Link className={`block py-2 px-3 ${pathname === '/skills' ? 'text-purple-600':'text-white hover:text-purple-600'}`} href={"#skills"}>
+          Skills
           </Link>
         </li>
         <li>
-        <Link className={`block py-2 px-3 ${pathname === '/about' ? 'text-purple-600':'text-white hover:text-purple-600'}`} href={"/about"}>
-          About
-          </Link>
-        </li>
-        <li>
-        <Link className={`block py-2 px-3 ${pathname === '/projects' ? 'text-purple-600':'text-white hover:text-purple-600'}`} href={"/projects"}>
+        <Link className={`block py-2 px-3 ${pathname === '/projects' ? 'text-purple-600':'text-white hover:text-purple-600'}`} href={"#projects"}>
           Projects
           </Link>
         </li>
