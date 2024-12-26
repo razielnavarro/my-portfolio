@@ -44,7 +44,7 @@ export default function Home() {
       </div>
 
       {/* Section with projects */}
-      <div className="text-center">
+      <div id="projects" className="text-center pb-12">
       <h1 className="pixel-btn">Projects</h1>
       <ProjectCard />
       </div>
