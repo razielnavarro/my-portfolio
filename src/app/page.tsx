@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import ProjectCard from "./components/ProjectCards";
 import SkillsCarousel from "./components/SkillsCarousel";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -49,9 +50,7 @@ export default function Home() {
       </div>
 
     {/* Footer for the website */}
-    <footer className="h-16">
-
-    </footer>
+    <Footer/>
     </>
   );
 }
