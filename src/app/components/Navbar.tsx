@@ -55,12 +55,12 @@ const Navbar = () => {
           </Link> */}
         </li>
         <li>
-        <Link className={`block py-2 px-3 ${pathname === '/skills' ? 'text-purple-600':'text-white hover:text-purple-600'}`} href={"#skills"}>
+        <Link className={`block py-2 px-3 ${pathname === '/skills' ? 'text-purple-600':'text-white hover:text-purple-600'}`} href={"#skills"} onClick={toggleMenu}>
           Skills
           </Link>
         </li>
         <li>
-        <Link className={`block py-2 px-3 ${pathname === '/projects' ? 'text-purple-600':'text-white hover:text-purple-600'}`} href={"#projects"}>
+        <Link className={`block py-2 px-3 ${pathname === '/projects' ? 'text-purple-600':'text-white hover:text-purple-600'}`} href={"#projects"} onClick={toggleMenu}>
           Projects
           </Link>
         </li>
