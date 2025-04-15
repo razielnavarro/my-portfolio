@@ -72,7 +72,7 @@ const ProjectCards = () => {
       ],
     },
     {
-      href: "https://pro-equip.vercel.app/",
+      href: "https://www.proequip.com.pa/",
       imgSrc: "assets/proequip.png",
       imgAlt: "PROEQUIP, S.A.",
       title: "Proequip, S.A.",
