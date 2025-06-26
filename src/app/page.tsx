@@ -42,7 +42,7 @@ export default function Home() {
       </div>
 
       {/* Section with experience */}
-      <div id="projects" className="text-center pb-12">
+      <div id="experience" className="text-center pb-12">
         <Experience />
       </div>
       {/* Footer for the website */}
